@@ -1,0 +1,27 @@
+.todo-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-item-wrapper {
+  animation: slideInRight 0.5s ease-out both;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 80px 20px;
+  color: #718096;
+  font-size: 1.125rem;
+  background: #f7fafc;
+  border-radius: 16px;
+  border: 2px dashed #cbd5e0;
+  animation: fadeInUp 0.6s ease-out;
+  font-weight: 500;
+}
+
+.empty-state:hover {
+  border-color: #667eea;
+  background: #ebf8ff;
+  color: #667eea;
+  transition: all 0.3s ease;
+}

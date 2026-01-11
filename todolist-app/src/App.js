@@ -11,6 +11,8 @@ function App() {
   const [editingTodo, setEditingTodo] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  console.log("test")
+
   // Lấy tất cả todos
   const fetchTodos = async () => {
     try {

@@ -6,6 +6,7 @@ const Todo = require('../models/Todo');
 router.get('/', async (req, res) => {
   try {
     const todos = await Todo.find().sort({ createdAt: -1 });
+    console.log(todos)
     res.json(todos);
   } catch (error) {
     res.status(500).json({ message: error.message });

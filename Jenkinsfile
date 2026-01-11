@@ -5,7 +5,7 @@ pipeline {
         DOCKER_REGISTRY = 'truongnguyendev'
         HELM_CHART_REPO = 'https://github.com/devnvgup/helm-chart.git'
         KUBE_NAMESPACE = 'devops'
-        DOCKER_CREDENTIALS_ID = 'dockerhub-cred'  // Jenkins credential ID
+        DOCKER_CREDENTIALS_ID = 'docker-hub'  // Jenkins credential ID
         GIT_HELM_CRED = 'git-ssh-key'             // Jenkins credential ID cho Helm repo
     }
 

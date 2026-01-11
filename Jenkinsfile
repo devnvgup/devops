@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_REGISTRY = 'truongnguyendev'
-        HELM_CHART_REPO = 'git@github.com:devnvgup/helm-chart.git'
+        HELM_CHART_REPO = 'https://github.com/devnvgup/helm-chart.git'
         KUBE_NAMESPACE = 'devops'
         DOCKER_CREDENTIALS_ID = 'dockerhub-cred'  // Jenkins credential ID
         GIT_HELM_CRED = 'git-ssh-key'             // Jenkins credential ID cho Helm repo
@@ -13,7 +13,7 @@ pipeline {
 
         stage('Checkout App') {
             steps {
-                git url: 'git@github.com:devnvgup/devops.git', branch: 'main'
+                git url: 'https://github.com/devnvgup/devops.git', branch: 'main'
             }
         }
 
